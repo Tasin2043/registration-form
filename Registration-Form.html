@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Web Technologies</title>
+	<title>Registration form</title>
 </head>
 <body>
-	<h1>First Page</h1>
-	<p>Hello World</p>
+
+	<form action="/action_page.php">
+  <fieldset>
+    <legend>Basic Information:</legend>
+    <label for="fname">Enter your first name:</label>
+        <input type="fname" id="fname" name="fname"><br><br>
+        <label for="lname">Enter your last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    
+<label>Gender</label> <input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female<br><br>
+<label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br><br>
+    <label for="relagion">Religion:</label>
+  <select class="form-control dropdown" id="religion" name="religion">
+    <option value="" selected="selected" disabled="disabled">-- select one --</option>
+    <option value="Islam">Islam</option>
+    <option value="Hindu">Hindu</option>
+    <option value="Christan">Christan</option>
+  </fieldset>
+</form>
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Contact Information:</legend>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="phone">Phone:</label>
+    <input type="phone" id="phone" name="phone"><br><br>
+  </fieldset>
+</form>
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Academic Information:</legend>
+    
+  </fieldset>
+</form>
 </body>
 </html>
+
+
